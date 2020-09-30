@@ -1,40 +1,65 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
+const Container = styled.div`
+  position: absolute;
+  left: 0%;
+  margin: 15px;
+  padding: 0px;
+  height: 1000px;
+  width: 350px;
+  line-height: 1em;
 
-
-const Card = styled.div`
-position:absolute;
-left:-2%;
-margin:25px;
-padding :20px;
-
-
+  .card {
+    height: 600px;
+  }
+  .title {
+    font-size: 1.5em;
+    color: #444;
+    font-weight: 800;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0 0 5.4px;
+  }
+  .para {
+    color: #696969;
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  .para2 {
+    color: #696969;
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: -5px;
+    line-height: 2.25em;
+  }
 `;
-const Card1 = ()=> (
-<Card><div class="Card">
-  <div class="card-image">
-    
-    <img src="https://sites.create-cdn.net/siteimages/25/7/0/257060/66/9/0/6690841/373x296.jpg" />
-  </div>
-  <div class="card-content">
-    <div class="media">
-      <div class="media-left">
-        
+const Card = () => (
+  <div>
+    <Container>
+      <div className="card">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <img
+              src="https://bulma.io/images/placeholders/1280x960.png"
+              alt="Placeholder image"
+            />
+          </figure>
+        </div>
+        <div class="card-content">
+          <header>
+            <h2 className="title">Put something here</h2>
+            <p className="para">Maybe here as well I think</p>
+          </header>
+          <p className="para2">
+            Phasellus quam turpis, feugiat sit amet in, hendrerit in lectus.
+            Praesent sed semper amet bibendum tristique fringilla.
+          </p>
+        </div>
       </div>
-      <div class="media-content">
-     
-      </div>
-    </div>
-
-    <div class="content">
-     <b>PUT SOMETHING INTRESTING</b><br/><br/>
-
-Phasellus quam turpis,  <br/>hendrerit in lectus. <br/>Praesent sed semper amet <br/> tristique fringilla.
-      <br/>
-    </div>
+    </Container>
   </div>
-</div>
-</Card>
-)
-export default Card1
+);
+export default Card;
