@@ -1,36 +1,65 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Card = styled.div`
+const Container = styled.div`
   position: absolute;
-  left: 75%;
+  left: 68%;
   margin: 15px;
   padding: 10px;
-  background-color: yellow;
-`;
-const Card2 = () => (
-  <Card>
-    <div class="Card">
-      <div class="card-image">
-        <img src="https://sites.create-cdn.net/siteimages/25/7/0/257060/66/9/0/6690841/373x296.jpg" />
-      </div>
-      <div class="card-content">
-        <div class="media">
-          <div class="media-left"></div>
-          <div class="media-content"></div>
-        </div>
+  height: 1000px;
+  width: 350px;
+  line-height: 1em;
 
-        <div class="content">
-          <b>PUT SOMETHING INTRESTING</b>
-          <br />
-          <br />
-          Phasellus quam turpis, <br />
-          hendrerit in lectus. <br />
-          Praesent sed semper amet <br /> tristique fringilla.
-          <br />
+  .card {
+    height: 600px;
+  }
+  .title {
+    font-size: 1.5em;
+    color: #444;
+    font-weight: 800;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0 0 5.4px;
+  }
+  .para {
+    color: #696969;
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  .para2 {
+    color: #696969;
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: -5px;
+    line-height: 2.25em;
+  }
+`;
+const Card3 = () => (
+  <div>
+    <Container>
+      <div className="card">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <img
+              src="https://bulma.io/images/placeholders/1280x960.png"
+              alt="Placeholder image"
+            />
+          </figure>
+        </div>
+        <div class="card-content">
+          <header>
+            <h2 className="title">Oh, and finally ...</h2>
+            <p className="para">Here's another intriguing subtitle</p>
+          </header>
+          <p className="para2">
+            Phasellus quam turpis, feugiat sit amet in, hendrerit in lectus.
+            Praesent sed semper amet bibendum tristique fringilla.
+          </p>
         </div>
       </div>
-    </div>
-  </Card>
+    </Container>
+  </div>
 );
-export default Card2;
+export default Card3;

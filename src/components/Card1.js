@@ -3,9 +3,9 @@ import styled from 'styled-components';
 
 const Container = styled.div`
   position: absolute;
-  left: 0%;
+  left: 3%;
   margin: 15px;
-  padding: 0px;
+  padding: 10px;
   height: 1000px;
   width: 350px;
   line-height: 1em;
