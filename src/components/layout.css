@@ -6,6 +6,12 @@ html {
   overflow-y: scroll;
 }
 body {
+  background-image: -webkit-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0.05),
+    rgba(0, 0, 0, 0)
+  );
+
   background-color: #f7f7f7;
   margin: 0;
   -webkit-font-smoothing: antialiased;

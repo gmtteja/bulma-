@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 const Container = styled.div`
+
   .title {
     font-size: 21.6px;
     color: #444444;
@@ -12,6 +13,7 @@ const Container = styled.div`
   }
   .col-6 {
     padding: 20px 0 0 20px;
+
   }
   .img1 {
     display: block;
@@ -91,34 +93,61 @@ const Container = styled.div`
     text-decoration: underline;
   }
   .one {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 39px;
+    font-family: 'Open Sans' sans-serif;
+    font-size: 25px;
     background-color: #0090c5;
     font-weight: 800;
     position: relative;
     left: 550px;
     line-height: 2em;
     letter-spacing: 0.01em;
-    top: -300px;
+    top: -690px;
     position: relative;
-    left: 650px;
+    left: 370px;
     border-radius: 10px;
     width: 350px;
-    height: 100px;
+    height: 80px;
   }
   .data {
     color: #ffffff;
     position: relative;
-    left: 22px;
+    left: 48px;
     top: 8px;
   }
   .icon2 {
-    position: relative;
-    left: 70px;
-    top: 10px;
     background-color: white;
-    border-radius: 120%;
+    border-radius: 100%;
+    position: relative;
+    top: 10px;
+    left: 30px;
+  }
+  .data2 {
+    position: relative;
+    top: -280px;
+    left: -8px;
+    background-color: #0090c5;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 21px;
+    color: #ffffff;
+    font-weight: 800;
+    height: 65px;
+    width: 145px;
+    border: none;
+    border-radius: 6px;
+  }
+  .icon3 {
+    position: relative;
+    top: -280px;
+    left: 50px;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 700;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    text-transform: none !important;
   }
 `;
 const Data = () => (
@@ -151,6 +180,12 @@ const Data = () => (
                       <img src="https://bulma.io/images/placeholders/128x128.png" />
                     </figure>
                   </a>
+                  <a href="###">
+                    <icon className="icon3">
+                      <i class="fas fa-file-alt"></i>
+                    </icon>{' '}
+                    <button className="data2">More </button>
+                  </a>
                   <div>
                     <h2 className="title2">So what's this all about? </h2>
                     <p className="para1">
@@ -182,7 +217,7 @@ const Data = () => (
                     <ul>
                       <li className="one">
                         <a className="icon2">
-                          <i className="fas fa-arrow-circle-right"></i>
+                          <i class="far fa-arrow-alt-circle-right"></i>
                         </a>
                         <a className="data">Continue Reading </a>
                       </li>
